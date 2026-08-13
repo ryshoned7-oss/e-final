@@ -94,3 +94,60 @@ li {
 button {
   cursor: pointer;
 }
+
+button:active {
+  transform: translateY(1px);
+}
+
+.btn__menu {
+  background-color: transparent;
+  font-size: 40px;
+  text-align: center;
+  border: none;
+}
+
+.menu__backdrop {
+  position: absolute;
+  background-color: whitesmoke;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__backdrop {
+  display: none;
+}
+
+.menu--open .menu__backdrop {
+  display: flex;
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__list {
+  padding: 24px 0;
+}
+
+.menu__link {
+  color: #1a202c;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.btn__menu--close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  padding: 8px;
+  color: whitesmoke;
+}
