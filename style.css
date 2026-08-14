@@ -41,6 +41,10 @@ a:hover {
   text-align: underline;
 }
 
+.purple {
+  color: blueviolet;
+}
+
 ul {
   display: flex;
   padding: 24px 16px;
