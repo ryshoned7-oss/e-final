@@ -12,8 +12,7 @@
 <body>
 <section id="landing">
   <nav>
-    <div class="nav__container">
-      <div class="nav__row">
+      <div class="row nav__row">
         <div class="nav__logo">
           <img class="nav__logo--img" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="">
           <div class="nav__logo--title">Treact</div>
@@ -24,17 +23,47 @@
             <li><a href="#" class="nav__link">Blog</a></li>
             <li><a href="#" class="nav__link">Pricing</a></li>
             <li><a href="#" class="nav__link">Contact Us</a></li>
-            <li><a href="#" class="nav__link">Login</a></li>
+            <li><a href="#" class="nav__link login">Login</a></li>
             <li><a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
           </ul>
         </div>
-        <button class="btn btn__menu" onclick="openMenu()"><i class="fas fa-bars"></i></button>
+        <button class="btn btn__menu" onclick="openMenu()">
+           <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="btn__menu--svg"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
       </div>
-    </div>
   </nav>
-    <div class="menu__backdrop">
+    <div class="menu">
       <button class="btn btn__menu btn__menu--close" onclick="closeMenu()">
-         <i class="fas fa-times"></i>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="light___StyledCloseIcon-lj69nl-14 fASujC"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
       </button>
       <ul class="menu__links">
         <li class="menu__list"><a href="#about" class="menu__link" onclick="closeMenu()">About</a></li>
@@ -42,7 +71,7 @@
         <li class="menu__list"><a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a></li>
         <li class="menu__list"><a href="#contact__us" class="menu__link" onclick="closeMenu()">Contact</a></li>
         <li class="menu__list"><a href="#login" class="menu__link" onclick="closeMenu()">Login</a></li>
-        <li class="menu__list"><a href="#signup" class="menu__link" onclick="closeMenu()">Sign Up</a></li>
+        <li class="menu__list"><a href="#signup" class="menu__link menu__link--primary" onclick="closeMenu()">Sign Up</a></li>
       </ul>
     </div>
     <header>
