@@ -4,7 +4,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  color: #243e63;
 }
 
 html {
@@ -13,6 +12,7 @@ html {
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  color: #243e63;
 }
 .row {
   width: 100%;
@@ -139,6 +139,7 @@ nav {
   margin: 0 24px;
 }
 .nav__link {
+  color: #243e63;
   font-size: 14px;
   font-weight: 600;
   padding-top: 4px;
@@ -192,7 +193,7 @@ nav {
   border: none;
   border-radius: 500px;
   font-size: 14px;
-  color: white;
+  color: #243e63;;
   font-weight: bold;
   transition: all 300ms ease;
   cursor: pointer;
@@ -201,6 +202,7 @@ nav {
   background-color: transparent;
   border: none;
   transition: all 300ms ease;
+  display: none;
 }
 .btn__menu--svg:hover {
   filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg)
@@ -220,7 +222,7 @@ nav {
   margin: 24px 16px;
   padding: 32px;
   background-color: #fff;
-  border: 1px solid rgb(229, 231, 235);
+  border: 1px solid rgb(218, 221, 227);
   border-radius: 8px;
   z-index: 4;
   visibility: hidden;
@@ -551,6 +553,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row-reverse;
 }
 #values .section__title {
   margin-top: 16px;
@@ -607,7 +610,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 .value__name {
