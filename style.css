@@ -592,9 +592,10 @@ header {
   align-items: center;
 }
 .value__img {
-  width: 20px;
-  height: 20px;
+  width: 100%;
+  height: 100%;
 }
+ 
 .value:nth-child(1) .value__img--wrapper {
   background-color: #9ae6b4;
 }
@@ -606,8 +607,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 36px;
-  height: 36px;
+  max-width: 100%;
+  height: auto;
 }
 .value__name {
   margin-left: 12px;
