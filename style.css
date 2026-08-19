@@ -593,10 +593,20 @@ header {
 .value__title {
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
 }
 .value__img {
   width: 100%;
   height: 100%;
+}
+
+.value__img--pro {
+  height: 24px;
+  width: 24px;
+}
+.value__img--afford {
+  height: 24px;
+  width: 24px;
 }
  
 .value:nth-child(1) .value__img--wrapper {
@@ -1003,7 +1013,7 @@ main {
   transition: all 300ms ease;
 }
 .start__button:hover:nth-child(2) {
-  background-color: rgba(247, 250, 252);
+  background-color: rgb(100, 21, 255);
   color: rgba(100, 21, 255);
 }
 #start .row {
